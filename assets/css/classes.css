@@ -7,13 +7,18 @@
 
 .white-fundo {
     background: var(--white-color);
+    color: var(--primary-color);
 }
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 8 rem var(--gap);
 }
 
 .section {
     min-height: 100vh;
+}
+
+.menu-spacing {
+    height: 6.5rem;   
 }
