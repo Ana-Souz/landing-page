@@ -1,5 +1,5 @@
 .main-fundo {
-    background-image: url('/Landing-Page/assets/img/fundo.png');
+    background-image: url('../assets/img/fundo.png');
     background-size: cover;
     background-position: center center;
     color:var(--white-color);
@@ -12,7 +12,8 @@
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 8 rem var(--gap);
+    padding: 10rem var(--gap);
+    
 }
 
 .section {

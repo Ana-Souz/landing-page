@@ -19,16 +19,20 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/variables.css">
 
-<body class="main-fundo">
+<body>
+
+    <input id="fechar-menu" class="fechar-menu" type="checkbox" aria-label="Fechar menu" role="button">
+
+    <label class="fechar-menu-label" for="fechar-menu" title="Fechar menu"></label>
 
     <div class="menu white-fundo">
         <section class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('fechar-menu').checked = false;">
                 <a href="#">Logo</a>
             </h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('fechar-menu').checked = false;">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#top3">Top 3</a></li>
                     <li><a href="#grid-solucao">Soluções</a></li>
@@ -121,41 +125,47 @@
         </div>
     </section>
 
-    <section id="galeria" class="white-fundo section">
+    <section id="galeria" class="galeria white-fundo section">
 
-        <h2>Galeria</h2>
+        <h2 class="grid-main-heading">Galeria</h2>
 
-        <div class="galeria-img">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=1"
-                alt="random image from unsplash" />
+        <div class="grid">
 
-        </div>
+            <div class="galeria-img">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=1"
+                    alt="random image from unsplash" />
 
-        <div class="galeria-img">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=2"
-                alt="random image from unsplash" />
+            </div>
 
-        </div>
+            <div class="galeria-img">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=2"
+                    alt="random image from unsplash" />
 
-        <div class="galeria-img">
-            <img src="https://plus.unsplash.com/premium_photo-1681426687411-21986b0626a8?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=3"
-                alt="random image from unsplash" />
+            </div>
 
-        </div>
-        <div class="galeria-img">
-            <img src="https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=4"
-                alt="random image from unsplash" />
+            <div class="galeria-img">
+                <img src="https://plus.unsplash.com/premium_photo-1681426687411-21986b0626a8?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=3"
+                    alt="random image from unsplash" />
 
-        </div>
-        <div class="galeria-img">
-            <img src="https://images.unsplash.com/photo-1713472728612-ddd073be0bbd?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=5"
-                alt="random image from unsplash" />
+            </div>
 
-        </div>
+            <div class="galeria-img">
+                <img src="https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=4"
+                    alt="random image from unsplash" />
 
-        <div class="galeria-img">
-            <img src="https://images.unsplash.com/photo-1484662020986-75935d2ebc66?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=6"
-                alt="random image from unsplash" />
+            </div>
+
+            <div class="galeria-img">
+                <img src="https://images.unsplash.com/photo-1534512547189-5944d6fd30e8?q=80&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=5"
+                    alt="random image from unsplash" />
+
+            </div>
+
+            <div class="galeria-img">
+                <img src="https://images.unsplash.com/photo-1484662020986-75935d2ebc66?q=360&w=360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?img=6"
+                    alt="random image from unsplash" />
+
+            </div>
 
         </div>
 
@@ -213,6 +223,8 @@
                         <td>Análise de texto e fala para insights e interações.</td>
                         <td>R$ 2.800,00</td>
                     </tr>
+
+                    
                 </tbody>
 
             </table>
@@ -237,7 +249,7 @@
             <div class="form-contato">
 
                 <fieldset class="form-grid">
-                    
+
                     <legend>Contate-nos</legend>
 
                     <div class="form-grupo">
@@ -268,9 +280,12 @@
         </div>
     </section>
 
-    <footer>
-        <p><a href="#">Feito com carinho ❤ por Ana Souza</a></p>
+    <footer id="main-footer" class="footer white-fundo">
+        <p><a rel="nofllow" target="_blank" href="#">Feito com carinho <span class="heart">❤</span> por Ana Souza</a>
+        </p>
     </footer>
+
+    <a class="voltar-topo" href="#">➤</a>
 </body>
 
 </html>

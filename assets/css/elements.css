@@ -17,7 +17,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: var(--primary-color);
     background: var(--primary-color);
     line-height: 1.5;
@@ -55,39 +55,67 @@ h6 {
     font-size: 3.5rem;
 }
 
- a {
+a {
     text-decoration: none;
  }
 
- p {
+p {
     margin-bottom: 3rem;
  }
 
- .tabela-responsiva {
+.tabela-responsiva {
     overflow: hidden;
     overflow-x: auto;
  }
 
- table {
-    min-width: 36rem;
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: gray;
+    min-width: 360px;
     width: 100%;
-    border-collapse: 3rem;
- }
+    border-collapse: collapse;
+}
 
- table caption {
+table caption {
     font-style: italic;
     font-size: 1.6rem;
     text-align: left;
     margin-bottom: 1rem;
  }
 
- table td, table th {
+table td, table th {
     white-space: nowrap;
     padding: 1rem;
     text-align: left;
     border: 0.1rem solid var(--ligth-gray-color);
  }
 
- table th {
+table td, table th {
     background: var(--ligth-gray-color);
  }
+
+@media (max-width: 800px) {
+    .intro-content, .grid {
+        grid-template-columns: 1fr;
+    }
+
+
+.galeria-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+ }
+
+.galeria-img img {
+    width: 100%;
+ }
+
+.grid-solucao-content {
+    display: block;
+ }
+}
